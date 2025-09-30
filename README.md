@@ -30,9 +30,9 @@ O projeto está organizado da seguinte forma para facilitar a manutenção:
 │   ├── css/
 │   │   └── main.css
 │   ├── js/
-│   │   └── (seus scripts, se houver)
+│   │   
 │   └── images/
-│       └── (seu logo e outras imagens)
+│       └── (imagens)
 ├── index.html
 └── README.md
 ```
