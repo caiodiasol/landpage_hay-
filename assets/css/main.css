@@ -1,0 +1,2673 @@
+/* Sistema de Tipografia Moderno */
+:root {
+  /* Fontes modernas */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Tamanhos de fonte responsivos */
+  --text-xs: clamp(0.75rem, 1.5vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 1.8vw, 1rem);
+  --text-base: clamp(1rem, 2vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 2.2vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 2.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 3vw, 1.875rem);
+  --text-3xl: clamp(1.875rem, 3.5vw, 2.25rem);
+  --text-4xl: clamp(2.25rem, 4vw, 3rem);
+  --text-5xl: clamp(3rem, 5vw, 4rem);
+  
+  /* Line heights modernos */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  /* Letter spacing moderno */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  
+  /* Cores originais do site */
+  --earth-brown: #813c03;      /* Marrom terra */
+  --golden-yellow: #d8680c;    /* Dourado indígena */
+  --dark-gray: #333333;        /* Cinza escuro */
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: var(--leading-normal);
+  color: var(--dark-gray);
+  overflow-x: hidden;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia moderna para parágrafos */
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  word-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia moderna para títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  margin-bottom: 1.5rem;
+  color: var(--earth-brown);
+  letter-spacing: var(--tracking-tight);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 { 
+  font-size: var(--text-5xl);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+
+h2 { 
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-snug);
+}
+
+h3 { 
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-snug);
+}
+
+h4 { 
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-normal);
+}
+
+h5 { 
+  font-size: var(--text-xl);
+  font-weight: 500;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-normal);
+}
+
+h6 { 
+  font-size: var(--text-lg);
+  font-weight: 500;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-normal);
+}
+
+/* Tipografia moderna para elementos específicos */
+.lead {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: var(--earth-brown);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--earth-brown);
+  margin-bottom: 2rem;
+  text-rendering: optimizeLegibility;
+}
+
+.text-colored {
+  color: var(--golden-yellow);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(192, 104, 4, 0.3);
+}
+
+.text-colored2 {
+  color: var(--earth-brown);
+  font-weight: 600;
+}
+
+/* Tipografia moderna para links */
+a {
+  color: var(--earth-brown);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: var(--tracking-normal);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--golden-yellow);
+  text-decoration: underline;
+}
+
+/* Estilos para navegação do header */
+.nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500;
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.nav-link:hover {
+  color: #ffbb00 !important;
+  background-color: rgba(15, 13, 12, 0.15);
+  transform: translateY(-1px);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border-radius: 20px;
+}
+
+.nav-link.active {
+  color: #ffbb00!important;
+  background-color: rgba(15, 13, 12, 0.15) !important;
+  font-weight: 600;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(129, 55, 3, 0.2);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border-radius: 8px;
+}
+
+/* Linha inferior removida */
+
+/* Garantir que o estado ativo seja sempre visível */
+.nav-link.active i {
+  color: #ffbb00 !important;
+}
+
+/* Estilos para botões de categorias de produtos */
+.nav-produtos .nav-link {
+  color: #8B4513 !important;
+  font-weight: 500;
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(160, 82, 45, 0.1) 100%);
+  border: 1px solid rgba(139, 69, 19, 0.2);
+  width: 100%;
+  text-align: left;
+}
+
+.nav-produtos .nav-link:hover {
+  color: white !important;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(139, 69, 19, 0.3);
+}
+
+.nav-produtos .nav-link.active {
+  color: white !important;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%) !important;
+  font-weight: 600;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 69, 19, 0.3);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 187, 0, 0.3);
+}
+
+/* Responsividade para botões de produtos */
+@media (max-width: 768px) {
+  .nav-produtos .nav-link {
+    padding: 1rem !important;
+    margin: 0.25rem 0;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .nav-produtos .nav-link:hover {
+    transform: none;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+  }
+}
+
+/* Melhorar navegação mobile */
+@media (max-width: 768px) {
+  .nav-link {
+    padding: 1rem !important;
+    margin: 0.25rem 0;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .nav-link:hover {
+    transform: none;
+    background-color: rgba(207, 206, 204, 0.1);
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border-radius: 12px;
+  }
+}
+
+/* Garantir scroll suave para todas as seções */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos otimizados para a seção Sobre Nós */
+#sobre-nos {
+  padding: 2rem 0;
+}
+
+.video-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.poem-content {
+  padding: 1rem 0;
+}
+
+.poem-content p {
+  font-family: 'Spectral', serif;
+  font-size: 1.4rem;
+  line-height: 2.2;
+  color: var(--earth-brown);
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, 
+    rgba(248, 249, 250, 0.6) 0%, 
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  border-radius: 16px;
+  border-left: 4px solid var(--golden-yellow);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Elementos sutis entre seções */
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--golden-yellow) 50%, 
+    transparent 100%
+  );
+  opacity: 0.3;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--earth-brown) 50%, 
+    transparent 100%
+  );
+  opacity: 0.2;
+}
+
+/* Gradientes sutis entre seções */
+#carrossel {
+  background: linear-gradient(180deg, #fefefe 0%, rgb(250, 248, 248) 100%);
+}
+
+#nossaessencia {
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.8) 100%);
+}
+
+#destaques {
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.8) 100%);
+}
+
+#sobre-nos {
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.8) 100%);
+}
+
+#produtos {
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0.8) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.8) 100%);
+}
+
+#fale-conosco {
+  background: linear-gradient(180deg, rgba(248, 249, 250, 0.8) 0%, #fefefe 100%);
+}
+
+/* Responsividade otimizada */
+@media (max-width: 992px) {
+  .video-wrapper {
+    max-width: 350px;
+  }
+  
+  .poem-content p {
+    font-size: 1.3rem;
+    line-height: 2.0;
+    padding: 1.5rem;
+  }
+  
+  /* Ocultar texto "Hayô Ateliê" em tablets apenas da seção Nossa Essência */
+  #nossaessencia .text-center.text-colored.mt-2 {
+    display: none !important;
+  }
+  
+  /* Estilos para o texto na seção de produtos em tablets */
+  #destaques .text-center.text-colored.mt-2 {
+    margin-bottom: 2rem;
+  }
+  
+  #destaques .text-center.text-colored.mt-2 h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #destaques .text-center.text-colored.mt-2 p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #sobre-nos {
+    padding: 1.5rem 0;
+  }
+  
+  .video-wrapper {
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .poem-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+  }
+  
+  /* Ocultar texto "Hayô Ateliê" em mobile apenas da seção Nossa Essência */
+  #nossaessencia .text-center.text-colored.mt-2 {
+    display: none !important;
+  }
+  
+  /* Estilos para o texto na seção de produtos em mobile */
+  #destaques .text-center.text-colored.mt-2 {
+    margin-bottom: 2rem;
+  }
+  
+  #destaques .text-center.text-colored.mt-2 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #destaques .text-center.text-colored.mt-2 p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-wrapper {
+    max-width: 280px;
+  }
+  
+  .poem-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 1.2rem;
+  }
+}
+
+/* Ajustar posicionamento das seções para navegação */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* Melhorar visualização do header fixo */
+#cabecalho {
+  backdrop-filter: blur(10px);
+  background-color: rgba(254, 254, 254, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Tipografia moderna para listas */
+ul, ol {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: var(--dark-gray);
+}
+
+/* Tipografia moderna para citações */
+blockquote {
+  font-size: var(--text-lg);
+  font-style: italic;
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: var(--earth-brown);
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--golden-yellow);
+  background: rgba(192, 104, 4, 0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Tipografia moderna para código */
+code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: var(--text-sm);
+  background: rgba(139, 69, 19, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: var(--earth-brown);
+}
+
+/* Tipografia responsiva moderna */
+@media (max-width: 768px) {
+  :root {
+    --text-base: clamp(0.875rem, 2.5vw, 1rem);
+    --text-lg: clamp(1rem, 3vw, 1.125rem);
+    --text-xl: clamp(1.125rem, 3.5vw, 1.25rem);
+    --text-2xl: clamp(1.25rem, 4vw, 1.5rem);
+    --text-3xl: clamp(1.5rem, 4.5vw, 1.875rem);
+    --text-4xl: clamp(1.875rem, 5vw, 2.25rem);
+    --text-5xl: clamp(2.25rem, 6vw, 3rem);
+  }
+  
+  .section-title {
+    font-size: var(--text-2xl);
+    line-height: var(--leading-snug);
+  }
+  
+  .lead {
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+  }
+  
+  p {
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --text-base: clamp(0.75rem, 3vw, 0.875rem);
+    --text-lg: clamp(0.875rem, 3.5vw, 1rem);
+    --text-xl: clamp(1rem, 4vw, 1.125rem);
+    --text-2xl: clamp(1.125rem, 4.5vw, 1.25rem);
+    --text-3xl: clamp(1.25rem, 5vw, 1.5rem);
+    --text-4xl: clamp(1.5rem, 5.5vw, 1.875rem);
+    --text-5xl: clamp(1.875rem, 6.5vw, 2.25rem);
+  }
+  
+  .section-title {
+    font-size: var(--text-xl);
+    line-height: var(--leading-tight);
+  }
+  
+  .lead {
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
+  }
+  
+  p {
+    font-size: var(--text-xs);
+    line-height: var(--leading-snug);
+  }
+}
+
+/* Otimização geral de qualidade de imagens */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Padronização de tamanhos de imagens */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ==========================================================================
+   Paleta de Cores Indígenas e Naturais
+   ========================================================================== */
+
+:root {
+  /* Cores principais indígenas */
+  --indigenous-earth: #8B4513;      /* Marrom terra */
+  --indigenous-clay: #CD853F;        /* Marrom claro */
+  --indigenous-sunset: #D2691E;      /* Laranja terracota */
+  --indigenous-gold: #c06804;        /* Dourado indígena */
+  --indigenous-forest: #163b16;      /* Verde floresta */
+  --indigenous-sky: #87CEEB;         /* Azul céu */
+  --indigenous-cream: #F5DEB3;       /* Creme natural */
+  --indigenous-burgundy: #800020;    /* Vinho escuro */
+}
+
+.navbar {
+  background: linear-gradient(135deg, var(--indigenous-earth) 0%, var(--indigenous-burgundy) 100%);
+  border-bottom: 3px solid var(--indigenous-gold);
+}
+
+.logo {
+  max-height: 120px;
+  width: auto;
+}
+
+.no-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cabecalho .nav .nav-link.active {
+  max-width: 1200px;
+  background-color: var(--indigenous-cream);
+  color: var(--indigenous-earth);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover {
+  color: #fff;
+}
+
+/* Seção do Carrossel */
+#carrossel {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-inner {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Estiliza os indicadores do carrossel */
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(218, 125, 4, 0.5);
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.carousel-indicators .active {
+  background-color: #7a0707;
+}
+
+/* Melhora a visibilidade dos controles de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Responsividade do carrossel para iPads */
+@media (max-width: 1024px) and (min-width: 768px) {
+  #carrossel .carousel,
+  #carrossel .carousel-item {
+    height: 40vh;
+  }
+  
+  #carrossel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+  }
+}
+
+/* Responsividade do carrossel para tablets */
+@media (max-width: 992px) {
+  #carrossel .carousel,
+  #carrossel .carousel-item {
+    height: 40vh;
+  }
+  
+  #carrossel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+  }
+  
+  
+  
+  /* Ajusta os controles para melhor visualização em tablets */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Posiciona os indicadores mais próximos do conteúdo */
+  .carousel-indicators {
+    bottom: 8px;
+  }
+}
+
+/* Regra específica para iPad */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .carousel,
+  .carousel-item {
+    height: 55vh;
+  }
+  
+  .carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Layout específico para iPad na seção Nossa Essência */
+  #nossaessencia .row {
+    flex-direction: column;
+  }
+  
+  #nossaessencia .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  #nossaessencia .col-md-8 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Organiza as imagens em linha para iPad */
+  #nossaessencia .col-md-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  #nossaessencia .col-md-4 img {
+    width: 48%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+  }
+  
+  /* Organiza o conteúdo em blocos foto-texto */
+  #nossaessencia .nossa-essencia-text {
+    margin-bottom: 1rem;
+  }
+  
+  #nossaessencia .nossa-essencia-text p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  
+  /* Adiciona espaçamento entre seções */
+  #nossaessencia .mt-0 {
+    margin-top: 1rem !important;
+  }
+  
+  /* Layout alternado foto-texto para iPad */
+  #nossaessencia .container {
+    padding: 0 2rem;
+  }
+  
+  /* Primeira seção: imagens no topo */
+  #nossaessencia .col-md-4 {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+  
+  /* Segunda seção: texto principal */
+  #nossaessencia .col-md-8 {
+    order: 2;
+  }
+  
+  /* Organiza o lead em destaque */
+  #nossaessencia .lead {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--indigenous-cream) 0%, #fff 100%);
+    border-radius: 12px;
+    border-left: 4px solid var(--indigenous-gold);
+  }
+  
+  /* Melhora a separação visual entre seções */
+  #nossaessencia .border-top {
+    border-top: 3px solid var(--indigenous-gold) !important;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Melhora a tipografia para iPad */
+  #nossaessencia .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #nossaessencia h4.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Organiza melhor os títulos das subseções */
+  #nossaessencia .text-center.text-colored {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--indigenous-cream) 0%, #fff 100%);
+    border-radius: 8px;
+  }
+  
+  /* Melhora o espaçamento geral */
+  #nossaessencia {
+    padding: 2rem 0;
+  }
+}
+
+/* Responsividade do carrossel para celulares */
+@media (max-width: 576px) {
+  #carrossel .carousel,
+  #carrossel .carousel-item {
+    height: 40vh;
+  }
+  
+  #carrossel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+  }
+  
+  
+  
+  /* Aumenta o tamanho dos controles para facilitar o toque em dispositivos móveis */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Ajusta o tamanho dos indicadores para melhor visualização */
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  /* Ajusta para telas muito pequenas */
+  @media (max-width: 480px) {
+    #carrossel .carousel,
+    #carrossel .carousel-item {
+      height: 25vh;
+    }
+    
+    #carrossel .carousel-item img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      image-rendering: high-quality;
+    }
+  }
+  
+  /* Ajusta para telas pequenas */
+  @media (max-width: 360px) {
+    #carrossel .carousel,
+    #carrossel .carousel-item {
+      height: 35vh;
+    }
+    
+    #carrossel .carousel-item img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      image-rendering: high-quality;
+    }
+  }
+}
+
+/* Padronização das imagens da seção "Nossa Essência" */
+#nossaessencia .col-md-4 img {
+  width: 100%; /* Mantém a largura ajustada */
+  height: 500px; /* Altura aumentada para equivaler ao texto */
+  object-fit: cover; /* Preenche todo o espaço sem distorcer */
+  object-position: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.1);
+  margin-bottom: 1.5rem; /* Espaçamento entre as imagens */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#nossaessencia .col-md-4 img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(133, 58, 22, 0.2);
+}
+
+/* Nova Seção Sobre Nós */
+#sobre-nos {
+  background: linear-gradient(135deg, var(--indigenous-cream) 0%, var(--indigenous-clay) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#sobre-nos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 0%, rgba(139, 69, 19, 0.05) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+#sobre-nos .col-md-6 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.15);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+}
+
+#sobre-nos .col-md-6 img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(133, 58, 22, 0.2);
+}
+
+/* Ajustes específicos para as imagens da seção Nossa Essência na versão desktop */
+#sobre-nos .col-md-4 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.15);
+  margin-bottom: 2.5rem;
+}
+
+#sobre-nos .col-md-4 img:first-child {
+  margin-top: 3rem;
+}
+
+#sobre-nos .col-md-4 img:last-child {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+/* Espaçamento específico para desktop na seção Nossa Essência */
+@media (min-width: 992px) {
+  #sobre-nos .col-md-4 img:first-child {
+    margin-bottom: 5rem !important;
+  }
+  
+  #sobre-nos .col-md-4 img:last-child {
+    margin-top: 4rem !important;
+  }
+}
+
+/* Padronização das imagens dos produtos em destaque */
+#destaques .col-md-3 img,
+#destaques .col-6 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.15);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Layout das imagens dos produtos em destaque */
+#destaques .col-md-3,
+#destaques .col-6 {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#destaques .row {
+  align-items: stretch;
+}
+
+/* Regras removidas - apenas imagens na seção de destaques */
+
+/* Estilização dos links dos produtos em destaque */
+#destaques .product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#destaques .product-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+#destaques .product-link:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(133, 58, 22, 0.25);
+}
+
+#destaques .product-link:hover h3 {
+  color: #8B4513;
+  transform: translateY(-2px);
+}
+
+
+/* Layout responsivo para produtos em destaque */
+@media (min-width: 768px) and (max-width: 991px) {
+  #destaques .col-md-2 img,
+  #destaques .col-6 img {
+    height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  #destaques .col-md-2 img,
+  #destaques .col-6 img {
+    height: 400px;
+  }
+}
+
+/* Responsividade para produtos em destaque */
+@media (max-width: 768px) {
+  #destaques .col-md-1,
+  #destaques .col-6 {
+    margin-bottom: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  #destaques .col-md-1 img,
+  #destaques .col-6 img {
+    height: 220px;
+  }
+  
+  #sobre-nos .col-md-6 img {
+    height: 200px;
+  }
+  
+  #sobre-nos .col-md-4 img {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  #sobre-nos .col-md-4 img:first-child {
+    margin-top: 1.5rem;
+  }
+  
+  #sobre-nos .col-md-4 img:last-child {
+    margin-top: 0.5rem;
+  }
+  
+  /* Reduz o espaçamento entre as linhas de imagens */
+  #destaques .row {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Ajusta o espaçamento entre as duas primeiras e as duas de baixo */
+  #destaques .row:first-of-type {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Reduz ainda mais o espaçamento entre as imagens */
+  #destaques .col-6:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Reduz o espaçamento entre as duas linhas de imagens */
+  #destaques .row + .row {
+    margin-top: 0.25rem;
+  }
+}
+  
+  .tab-content .col-md-3 {
+    margin-bottom: 3.5rem;
+  }
+  
+  .tab-content .col-md-3 h5 {
+    min-height: auto;
+    margin: 0.75rem 0 0.5rem 0;
+  }
+  
+  .tab-content .col-md-3 p {
+    text-align: left;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-justify: none;
+    hyphens: none;
+  }
+  
+  .tab-content .col-md-3 img {
+    height: 250px;
+  }
+
+
+@media (max-width: 576px) {
+  #destaques .col-md-4 img {
+    height: 250px;
+  }
+  
+  #destaques .product-link:hover h3 {
+    transform: none;
+  }
+  
+  .tab-content .product-link:hover h5 {
+    transform: none;
+  }
+}
+
+/* Layout dos produtos nas abas */
+.tab-content .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.tab-content .row {
+  align-items: stretch;
+}
+
+/* Padronização das imagens dos produtos nas abas */
+.tab-content .col-md-3 img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.15);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Garantir que as imagens ocupem todo o espaço disponível */
+.tab-content .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tab-content .col-md-3 .product-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tab-content .col-md-3 .product-link img {
+  flex: 1;
+  min-height: 350px;
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Centralização dos títulos dos produtos nas abas */
+.tab-content .col-md-3 h5 {
+  text-align: center;
+  margin: 1rem 0 0.75rem 0;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Distribuição dos textos dos produtos nas abas */
+.tab-content .col-md-3 p {
+  flex-grow: 1;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 0;
+  word-spacing: 0.1em;
+  letter-spacing: 0.02em;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Estilização dos links dos produtos nas abas */
+.tab-content .product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.tab-content .product-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tab-content .product-link:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(133, 58, 22, 0.25);
+}
+
+.tab-content .product-link:hover h5 {
+  color: #8B4513;
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  background-color: #fadc9e;
+}
+
+.section-title {
+  font-family: Spectral, cursive;
+}
+
+/* Estilos adicionais para títulos e elementos da seção Nossa Essência */
+#nossaessencia .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: var(--indigenous-earth);
+}
+
+#nossaessencia .section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--indigenous-gold) 0%, var(--indigenous-sunset) 50%, var(--indigenous-gold) 100%);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+#nossaessencia .lead {
+  font-size: 1.25rem;
+  color: var(--indigenous-earth);
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.2);
+}
+
+#nossaessencia h4.section-title {
+  color: #853a16;
+  font-family: Spectral, cursive;
+  font-size: 2rem;
+  position: relative;
+}
+
+#nossaessencia h4.section-title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #e59b00;
+  margin: 0.5rem auto 0;
+}
+
+#quem-somos {
+  background-color: #fafafa;
+}
+
+/* Estilos para a seção Nossa Essência */
+#nossaessencia {
+  background: linear-gradient(135deg, #fff 0%, var(--indigenous-cream) 100%);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+#nossaessencia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--indigenous-forest) 0%, var(--indigenous-sky) 25%, var(--indigenous-gold) 50%, var(--indigenous-sky) 75%, var(--indigenous-forest) 100%);
+}
+
+.nossa-essencia-text {
+  max-width: 100%;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+#nossaessencia .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nossaessencia .row {
+  width: 100%;
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+/* Melhora o alinhamento das colunas */
+#nossaessencia .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 1rem;
+}
+
+#nossaessencia .col-md-8 {
+  padding-left: 1rem;
+}
+
+.nossa-essencia-text p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.nossa-essencia-text .text-center {
+  text-align: center !important;
+}
+
+/* Responsividade para a seção Nossa Essência */
+@media (max-width: 992px) {
+  #nossaessencia .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .nossa-essencia-text {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  #nossaessencia .section-title {
+    font-size: 2rem;
+  }
+  
+  .nossa-essencia-text {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  #nossaessencia h4.section-title {
+    font-size: 1.8rem;
+  }
+  
+  /* Reduz o espaçamento entre o carrossel e a seção Nossa Essência em tablets */
+  #nossaessencia {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  /* Remove espaçamento da div com classes mt-3 pt-2 pb-5 em tablets */
+  #nossaessencia .mt-3 {
+    margin-top: 0.5rem !important;
+  }
+  
+  #nossaessencia .pt-2 {
+    padding-top: 0.5rem !important;
+  }
+  
+  #nossaessencia .pb-5 {
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #nossaessencia .section-title {
+    font-size: 1.8rem;
+  }
+  
+  #nossaessencia h4.section-title {
+    font-size: 1.6rem;
+  }
+  
+  .nossa-essencia-text p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  #nossaessencia > div {
+    padding-top: 0.5rem !important;
+  }
+  
+  #nossaessencia {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  /* Reduz o espaçamento entre o carrossel e a seção Nossa Essência */
+  #nossaessencia .container {
+    padding-top: 0 !important;
+  }
+  
+  /* Remove qualquer margin/padding extra da seção */
+  #nossaessencia .row {
+    margin-top: 0 !important;
+  }
+  
+  /* Remove espaçamento extra de classes Bootstrap */
+  #nossaessencia .pt-5 {
+    padding-top: 0 !important;
+  }
+  
+  #nossaessencia .py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  /* Remove espaçamento da div com classes mt-3 pt-2 pb-5 */
+  #nossaessencia .mt-3 {
+    margin-top: 0 !important;
+  }
+  
+  #nossaessencia .pt-2 {
+    padding-top: 0 !important;
+  }
+  
+  #nossaessencia .pb-5 {
+    padding-bottom: 1rem !important;
+  }
+  
+  /* Garante que a seção Nossa Essência comece logo após o carrossel */
+  #nossaessencia {
+    margin-top: 0 !important;
+  }
+  
+  #nossaessencia .container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+
+#destaques {
+  background: linear-gradient(135deg, var(--indigenous-cream) 0%, var(--indigenous-clay) 100%);
+  position: relative;
+}
+
+#destaques::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--indigenous-gold) 0%, var(--indigenous-sunset) 50%, var(--indigenous-gold) 100%);
+}
+
+#produtos {
+  background: linear-gradient(135deg, var(--indigenous-cream) 0%, var(--indigenous-cream) 100%);
+  position: relative;
+}
+
+#produtos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--indigenous-forest) 0%, var(--indigenous-sky) 50%, var(--indigenous-forest) 100%);
+}
+
+#fale-conosco {
+  background-color: #fadc9e;
+}
+
+.text-colored {
+  color: var(--indigenous-gold);
+  text-shadow: 1px 1px 2px rgb(206, 89, 5);
+}
+
+.text-colored2 {
+  color: var(--indigenous-earth);
+  font-weight: 600;
+}
+
+.nav-produtos .nav-link.active,
+#fale-conosco button {
+  background: linear-gradient(135deg, var(--indigenous-earth) 0%, var(--indigenous-burgundy) 100%);
+  color: var(--indigenous-cream);
+  border: 2px solid var(--indigenous-gold);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.nav-produtos .nav-link:hover {
+  color: var(--indigenous-earth);
+  background-color: var(--indigenous-cream);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+/* Estilos para o formulário de contato */
+.contact-form-card {
+  background: linear-gradient(135deg, #fff 0%, var(--indigenous-cream) 100%);
+  border-radius: 15px;
+  border: 2px solid var(--indigenous-gold);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-form-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--indigenous-gold), var(--indigenous-sunset), var(--indigenous-gold));
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(133, 58, 22, 0.15) !important;
+}
+
+.contact-btn {
+  background: linear-gradient(135deg, var(--indigenous-earth) 0%, var(--indigenous-burgundy) 100%);
+  color: var(--indigenous-cream);
+  border: 2px solid var(--indigenous-gold);
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, var(--indigenous-gold) 0%, var(--indigenous-sunset) 100%);
+  color: var(--indigenous-earth);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+/* Estilos para os cards de redes sociais e localização */
+.social-card, .location-card {
+  background: linear-gradient(135deg, #fff 0%, #fadc9e 100%);
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover, .location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(133, 58, 22, 0.15) !important;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+}
+
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.facebook-icon {
+  background-color: #3b5998;
+}
+
+.text-colored2-light {
+  color: #853a16;
+  opacity: 0.8;
+}
+
+.location-text {
+  color: #853a16;
+  font-weight: 500;
+}
+
+.map-container {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(133, 58, 22, 0.15);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(133, 58, 22, 0.25);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Melhorias no rodapé com as cores da aplicação */
+.footer-modern {
+  background: linear-gradient(135deg, var(--indigenous-earth) 0%, var(--indigenous-burgundy) 50%, var(--indigenous-sunset) 100%);
+  color: var(--indigenous-cream);
+  margin-top: 0;
+  border-top: 4px solid var(--indigenous-gold);
+  position: relative;
+}
+
+.footer-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--indigenous-gold) 0%, var(--indigenous-cream) 50%, var(--indigenous-gold) 100%);
+}
+
+.footer-logo {
+  max-height: 80px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-logo-link:hover {
+  text-decoration: none;
+}
+
+/* Alinhamento dos títulos do footer */
+.footer-top .row {
+  align-items: flex-start;
+}
+
+.footer-top .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Centralizar logo no mobile */
+@media (max-width: 768px) {
+  .footer-top .col-md-4:first-child {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-info p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer-info p:hover {
+  transform: translateX(5px);
+}
+
+.footer-heading {
+  font-family: Spectral, cursive;
+  color: #fadc9e;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  min-height: 2.5rem;
+}
+
+.footer-heading:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #fadc9e;
+  bottom: -5px;
+  left: 25%;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-social-link:hover {
+  background-color: #fadc9e;
+  color: #853a16;
+  transform: translateY(-3px);
+}
+
+.newsletter .form-control {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 40px;
+}
+
+.newsletter-btn {
+  background-color: #fadc9e;
+  color: #853a16;
+  font-weight: bold;
+  border: none;
+}
+
+.newsletter-btn:hover {
+  background-color: #fff;
+  color: #853a16;
+}
+
+.footer-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.footer-value-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.footer-value-tag:hover {
+  background-color: #fadc9e;
+  color: #853a16;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer-bottom strong {
+  color: #fadc9e;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Media Queries para Responsividade
+   ========================================================================== */
+
+/* Tablets (e.g., iPads em modo retrato) - até 991px */
+@media (max-width: 991px) {
+  #nossaessencia .col-md-4 img {
+    height: 450px; /* Altura aumentada para tablets */
+  }
+
+  #nossaessencia .col-md-4 img:hover {
+    transform: scale(1.01);
+  }
+
+  #nossaessencia .col-md-4 {
+    padding-right: 0.5rem;
+  }
+  
+  #nossaessencia .col-md-8 {
+    padding-left: 0.5rem;
+  }
+
+  #destaques .col-md-4 img,
+  #destaques .col-6 img {
+    height: 400px;
+  }
+  
+  #sobre-nos .col-md-6 img {
+    height: 250px;
+  }
+  
+  #sobre-nos .col-md-4 img {
+    height: 220px;
+    margin-bottom: 1.2rem;
+  }
+  
+  #sobre-nos .col-md-4 img:first-child {
+    margin-top: 1.8rem;
+  }
+  
+  #sobre-nos .col-md-4 img:last-child {
+    margin-top: 0.8rem;
+  }
+
+  .tab-content .col-md-3 img {
+    height: 350px;
+    min-height: 350px;
+  }
+
+  .section-title {
+    font-size: 2.2rem; /* Ajuste opcional no tamanho da fonte do título */
+  }
+}
+
+/* Smartphones (e.g., iPhones, Android) - até 767px */
+@media (max-width: 767px) {
+  .logo {
+    max-height: 80px; /* Reduz o tamanho do logo em telas menores */
+  }
+
+  .carousel-item img {
+    height: 280px;
+  }
+
+  #nossaessencia .col-md-4 img {
+    height: 300px; /* Altura aumentada para mobile */
+    margin-bottom: 1.5rem; /* Adiciona espaço entre as imagens empilhadas */
+  }
+
+  #nossaessencia .col-md-4 img:hover {
+    transform: none; /* Remove o efeito hover em telas muito pequenas */
+  }
+
+  #nossaessencia .col-md-4,
+  #nossaessencia .col-md-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .nossa-essencia-text {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  /* Centraliza a seção Nossa Essência em mobile */
+  #nossaessencia .d-md-none {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  #nossaessencia .d-md-none .row {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  #nossaessencia .d-md-none .col-12 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Centraliza imagens em mobile */
+  #nossaessencia .d-md-none img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* Centraliza títulos e textos em mobile */
+  #nossaessencia .d-md-none .section-title,
+  #nossaessencia .d-md-none .lead,
+  #nossaessencia .d-md-none p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  /* Centraliza o título principal */
+  #nossaessencia .d-md-none h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Força centralização de todos os elementos */
+  #nossaessencia .d-md-none * {
+    text-align: center;
+  }
+  
+  /* Centraliza elementos específicos da seção Nossa Essência */
+  #nossaessencia .d-md-none .text-center {
+    text-align: center !important;
+  }
+  
+  #nossaessencia .d-md-none .border-top {
+    text-align: center;
+  }
+  
+  #nossaessencia .d-md-none .text-colored {
+    text-align: center;
+  }
+  
+  /* Força centralização do container */
+  #nossaessencia .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Remove qualquer padding/margin que cause desalinhamento */
+  #nossaessencia .d-md-none .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #destaques .col-md-4 img,
+  #destaques .col-6 img {
+    height: 350px;
+  }
+
+  .tab-content .col-md-3 img {
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .section-title {
+    font-size: 1.8rem; /* Reduz o tamanho da fonte dos títulos de seção */
+  }
+
+  #cabecalho .nav .nav-link {
+    text-align: center; /* Centraliza os links do menu hamburguer */
+  }
+
+  footer {
+    padding: 1.5rem 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer .col-md-4 {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .col-md-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Padrão de Background Alternado para Seções */
+/* Seções com fundo claro (par) */
+#carrossel,
+#destaques,
+#catalogos,
+#fale-conosco {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.98) 100%);
+  position: relative;
+}
+
+/* Seções com fundo terroso (ímpar) */
+#nossaessencia,
+#sobre-nos,
+#produtos {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.08) 0%, rgba(160, 82, 45, 0.12) 50%, rgba(255, 187, 0, 0.06) 100%);
+  position: relative;
+}
+
+/* Efeitos sutis de transição entre seções */
+#carrossel::after,
+#nossaessencia::after,
+#destaques::after,
+#sobre-nos::after,
+#catalogos::after,
+#produtos::after,
+#fale-conosco::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 69, 19, 0.2) 50%, transparent 100%);
+}
+
+/* Elementos decorativos sutis para seções terrosas */
+#nossaessencia::before,
+#sobre-nos::before,
+#produtos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 187, 0, 0.4) 50%, transparent 100%);
+}
+
+/* Elementos decorativos sutis para seções claras */
+#carrossel::before,
+#destaques::before,
+#catalogos::before,
+#fale-conosco::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 69, 19, 0.15) 50%, transparent 100%);
+}
+
+/* Estilos para a seção Catálogos */
+#catalogos {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.98) 100%);
+}
+
+.catalogo-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(139, 69, 19, 0.15);
+  border-color: rgba(255, 187, 0, 0.3);
+}
+
+.catalogo-image {
+  overflow: hidden;
+  border-radius: 12px;
+  height: 200px;
+}
+
+.catalogo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.catalogo-card:hover .catalogo-image img {
+  transform: scale(1.05);
+}
+
+.catalogo-card h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.catalogo-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.catalogo-btn {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  text-decoration: none !important;
+}
+
+.catalogo-btn:hover {
+  background: linear-gradient(135deg, #A0522D 0%, #8B4513 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 69, 19, 0.3);
+  color: white;
+  text-decoration: none !important;
+}
+
+/* Responsividade para Catálogos */
+@media (max-width: 768px) {
+  .catalogo-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .catalogo-image {
+    height: 180px;
+  }
+  
+  .catalogo-card h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Ajustes específicos para melhor apresentação dos defumadores */
+#defumadores .col-md-3 {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#defumadores .col-md-3 img {
+  height: 400px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.98) 100%);
+  padding: 0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.1);
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  transition: all 0.3s ease;
+}
+
+#defumadores .col-md-3 img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(139, 69, 19, 0.15);
+}
+
+#defumadores .col-md-3 .product-link img {
+  height: 400px !important;
+  width: 100% !important;
+  min-height: 400px !important;
+  max-height: 400px !important;
+  object-fit: cover !important;
+}
+
+#defumadores .col-md-3 h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#defumadores .col-md-3 p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+/* Responsividade para tablets - seção produtos */
+@media (max-width: 992px) and (min-width: 769px) {
+  /* Layout geral da seção produtos */
+  #produtos .container {
+    padding: 0 1rem;
+    overflow: visible;
+  }
+  
+  /* Ajustar sidebar para tablets */
+  #produtos .col-md-2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  #produtos .col-md-10 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Botões de navegação das categorias */
+  .nav-produtos {
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(248, 249, 250, 0.05) 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 69, 19, 0.1);
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .nav-produtos .nav-link {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(139, 69, 19, 0.1);
+    color: #8B4513;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+  }
+  
+  .nav-produtos .nav-link:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    border-color: #8B4513;
+  }
+  
+  .nav-produtos .nav-link.active {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    border-color: #8B4513;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+  }
+  
+  /* Garantir visibilidade completa dos botões */
+  .nav-produtos {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .nav-produtos .nav-link:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Ajustar container da navegação */
+  #produtos aside {
+    overflow: visible;
+    position: relative;
+  }
+  
+  /* Cards de produtos */
+  #produtos .col-md-3 {
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #produtos .col-md-3 img {
+    height: 280px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);
+  }
+  
+  #produtos .col-md-3 img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.15);
+  }
+  
+  #produtos .col-md-3 h5 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    line-height: 1.3;
+    color: #8B4513;
+    font-weight: 700;
+  }
+  
+  #produtos .col-md-3 p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #5a4a3a;
+    flex-grow: 1;
+  }
+  
+  /* Melhor distribuição das colunas */
+  #produtos .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  #produtos .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Descrições das categorias */
+  .category-description {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .category-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Responsividade para defumadores */
+@media (max-width: 768px) {
+  #defumadores .col-md-3 {
+    margin-bottom: 1.5rem;
+  }
+  
+  #defumadores .col-md-3 img {
+    height: 350px !important;
+    width: 100% !important;
+    padding: 0;
+  }
+  
+  #defumadores .col-md-3 .product-link img {
+    height: 350px !important;
+    width: 100% !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+  }
+  
+  #defumadores .col-md-3 h5 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  
+  #defumadores .col-md-3 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #defumadores .col-md-3 {
+    margin-bottom: 1rem;
+  }
+  
+  #defumadores .col-md-3 img {
+    height: 300px !important;
+    width: 100% !important;
+    padding: 0;
+  }
+  
+  #defumadores .col-md-3 .product-link img {
+    height: 300px !important;
+    width: 100% !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
+  }
+  
+  #defumadores .col-md-3 h5 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  #defumadores .col-md-3 p {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+}
+
+/* Estilos para botão Compre Aqui */
+.btn-compre-aqui {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.btn-compre-aqui:hover {
+  background: linear-gradient(135deg, #A0522D 0%, #CD853F 50%, #DEB887 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139, 69, 19, 0.4);
+  text-decoration: none;
+}
+
+.btn-compre-aqui:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.btn-compre-aqui i {
+  font-size: 1.3rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsividade para botão Compre Aqui */
+@media (max-width: 768px) {
+  .btn-compre-aqui {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn-compre-aqui:hover {
+    background: linear-gradient(135deg, #A0522D 0%, #CD853F 50%, #DEB887 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.4);
+    text-decoration: none;
+  }
+  
+  .btn-compre-aqui:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  }
+  
+  .btn-compre-aqui i {
+    font-size: 1.3rem;
+    animation: pulse 2s infinite;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-compre-aqui {
+    font-size: 1.1rem;
+    padding: 0.9rem 2.2rem;
+    margin: 1.8rem 0;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn-compre-aqui:hover {
+    background: linear-gradient(135deg, #A0522D 0%, #CD853F 50%, #DEB887 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.4);
+    text-decoration: none;
+  }
+  
+  .btn-compre-aqui:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  }
+  
+  .btn-compre-aqui i {
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+  }
+}
+
+/* Responsividade para padrão de backgrounds */
+@media (max-width: 768px) {
+  /* Ajustar opacidade dos backgrounds em mobile */
+  #carrossel,
+  #destaques,
+  #catalogos,
+  #fale-conosco {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 249, 250, 0.99) 100%);
+  }
+  
+  #nossaessencia,
+  #sobre-nos,
+  #produtos {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(160, 82, 45, 0.15) 50%, rgba(255, 187, 0, 0.08) 100%);
+  }
+  
+  /* Reduzir altura das linhas decorativas em mobile */
+  #carrossel::after,
+  #nossaessencia::after,
+  #destaques::after,
+  #sobre-nos::after,
+  #catalogos::after,
+  #produtos::after,
+  #fale-conosco::after {
+    height: 1px;
+  }
+}
+
+/* Estilos para descrições das categorias */
+.category-description {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.05) 0%, rgba(255, 187, 0, 0.03) 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  margin-bottom: 2rem;
+}
+
+.category-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  color: #5a4a3a;
+}
+
+.category-description strong {
+  color: #8B4513;
+  font-weight: 600;
+}
+
+/* Responsividade para descrições */
+@media (max-width: 768px) {
+  .category-description {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .category-description p {
+    font-size: 1rem;
+  }
+}

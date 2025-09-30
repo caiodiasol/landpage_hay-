@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Hayô</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&family=Spectral&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Criando o Cabeçalho do projeto com Menu-Hamburguer -->
+
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer">
+                <img class="navbar-brand m-0 section-title logo" src="assets/images/Amarelo.png" alt="Logo Hayô Ateliê">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills p-4 d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#carrossel" class="nav-link">
+                            <i class="bi bi-images me-1"></i>
+                            Início</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#nossaessencia" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Nossa Essência</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-star me-1"></i>
+                            Em Destaque</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-nos" class="nav-link">
+                            <i class="bi bi-heart me-1"></i>
+                            Sobre Nós</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#catalogos" class="nav-link">
+                            <i class="bi bi-collection me-1"></i>
+                            Catálogos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-bag-heart me-1"></i>
+                            Produtos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção do Carrossel -->
+    <section id="carrossel">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="assets/images/carrousel/1.jpg" alt="Raizes da nossa Conexao">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/images/carrousel/2.jpg"  alt="Harmonia com a Natureza">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/images/carrousel/3.jpg" alt="Feito a mao">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assets/images/carrousel/4.jpg" alt="Sem crueldade">
+                    </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/images/carrousel/5.jpg" alt="Sem crueldade">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Seção Nossa Essência -->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="nossaessencia">
+            <div class="mt-0 pt-0 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center mb-4">
+                            <h2 class="section-title">Nossa <span class="text-colored">Essência</span></h2>
+                        </div>
+                    </div>
+                    <!-- Desktop Layout -->
+                    <div class="row align-items-start d-none d-md-flex">
+                        <div class="col-md-4 mt-3 mt-md-0">
+                            <img src="assets/images/fotos novas/zu-150 (1).JPEG" class="d-block w-100 mb-4 rounded" alt="Sobre o Ateliê">
+                            <img src="assets/images/fotos novas/zu-60 (1).JPEG" class="d-block w-100 mb-3 rounded" alt="Foto de Afrodite, fundadora do ateliê">
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="text-center mb-4">
+                                <p class="lead"><strong><i>Semeamos beleza como quem planta floresta.</i></strong></p>
+                            </div>
+                            
+                            <div class="nossa-essencia-text">
+                                <p>
+                                    <strong>Hayô Ateliê</strong> nasce desse mesmo lugar: onde a raiz encontra a memória do mundo, 
+                                    e a planta se transforma em reza, cura e caminho. Somos terra viva, floresta em forma de cuidado, 
+                                    um chamado para reencantar o cotidiano com a sabedoria que vem da natureza e das ancestrais 
+                                    que sussurram entre folhas e ventos.
+                                </p>
+                                
+                                <p>
+                                    Carregamos em cada produto a força da floresta, o saber das mulheres que curam com ervas e o tempo 
+                                    da natureza que nos ensina a esperar, respeitar e sentir. Tudo que criamos a partir de plantas medicinais é ancestral. 
+                                    Cada cosmético, cada manipulação de plantas, cada alquimia é feito com dedicação, atenção aos detalhes e guiado por 
+                                    estudo e intenção de cura.
+                                </p>
+                                
+                                <p class="text-center fst-italic my-4">
+                                    <em>Cosméticos fitoterápicos e fitoenergéticos — tecnologia ancestral para corpo, mente e alma.</em>
+                                </p>
+                                
+                                <p>
+                                    Nossa missão é reflorestar. Mentes. Corpos. Caminhos. Relembrar o que fomos antes da pressa, 
+                                    antes do ruído, quando entendíamos os ciclos da lua, conhecíamos o canto dos passarinhos e 
+                                    dançávamos ao ritmo da terra. Com Hayô, o cuidado diário se torna um retorno — à terra, ao silêncio, 
+                                    ao ensinamento profundo das nossas origens. Escolher Hayô é dizer sim ao sagrado que vive em você.
+                                </p>
+                            </div>
+                            
+                            <div class="mt-5 pt-3 border-top border-2">
+                                <div class="text-center mb-4">
+                                    <h4 class="section-title">Sou <span class="text-colored">Afrodite</span>,</h4>
+                                </div>
+                                
+                                <div class="nossa-essencia-text">
+                                    <p>
+                                        nativa da Ilha Grande (RJ) e mulher indígena do povo Pataxó Hã Hã Hãe. 
+                                        Minha caminhada é guiada pelos ensinamentos dos meus ancestrais e pela força da natureza que pulsa em mim.
+                                    </p>
+                                
+                                    <p>
+                                        Desde 2020, dedico-me à criação de cosméticos que honram as plantas e suas medicinas. 
+                                        Mas foi em 2024, no encontro do rio com o mar, no território Pataxó em Caraíva-Ba (aldeia Mãe - Barra Velha), 
+                                        que meu coração encontrou morada — e meu propósito, direção.
+                                    </p>
+                                
+                                    <p>
+                                        Criar cosméticos naturais é a forma que encontrei de celebrar a sabedoria ancestral 
+                                        e compartilhar os encantos da floresta com o mundo. Meu trabalho é movido pela intenção 
+                                        de levar cura, bem-estar e conexão — à sua vida e à sua relação com a natureza.
+                                    </p>
+                                
+                                    <p>
+                                        Com o <strong>Hayô Ateliê</strong>, vou além da criação de produtos: 
+                                        busco resgatar saberes antigos e oferecer a cada pessoa a oportunidade de vivenciar 
+                                        a magia das plantas e reconectar-se com sua própria essência.
+                                    </p>
+                                
+                                    <p>
+                                        Cada cosmético é uma homenagem à minha ancestralidade e à sabedoria que veio antes de mim. 
+                                        É também um convite para construirmos juntos um futuro mais respeitoso com a natureza 
+                                        e com os povos originários.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Mobile/Tablet Layout: Foto → Texto → Foto → Texto -->
+                    <div class="d-md-none">
+                        <!-- Primeira Foto -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <img src="assets/images/fotos novas/zu-150 (1).JPEG" class="d-block w-100 mb-4 rounded" alt="Sobre o Ateliê">
+                            </div>
+                        </div>
+                        
+                        <!-- Primeiro Texto -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="text-center mb-4">
+                                    <p class="lead"><strong><i>Semeamos beleza como quem planta floresta.</i></strong></p>
+                                </div>
+                                
+                                <div class="nossa-essencia-text">
+                                    <p>
+                                        <strong>Hayô Ateliê</strong> nasce desse mesmo lugar: onde a raiz encontra a memória do mundo, 
+                                        e a planta se transforma em reza, cura e caminho. Somos terra viva, floresta em forma de cuidado, 
+                                        um chamado para reencantar o cotidiano com a sabedoria que vem da natureza e das ancestrais 
+                                        que sussurram entre folhas e ventos.
+                                    </p>
+                                    
+                                    <p>
+                                        Carregamos em cada produto a força da floresta, o saber das mulheres que curam com ervas e o tempo 
+                                        da natureza que nos ensina a esperar, respeitar e sentir. Tudo que criamos a partir de plantas medicinais é ancestral. 
+                                        Cada cosmético, cada manipulação de plantas, cada alquimia é feito com dedicação, atenção aos detalhes e guiado por 
+                                        estudo e intenção de cura.
+                                    </p>
+                                    
+                                    <p class="text-center fst-italic my-4">
+                                        <em>Cosméticos fitoterápicos e fitoenergéticos — tecnologia ancestral para corpo, mente e alma.</em>
+                                    </p>
+                                    
+                                    <p>
+                                        Nossa missão é reflorestar. Mentes. Corpos. Caminhos. Relembrar o que fomos antes da pressa, 
+                                        antes do ruído, quando entendíamos os ciclos da lua, conhecíamos o canto dos passarinhos e 
+                                        dançávamos ao ritmo da terra. Com Hayô, o cuidado diário se torna um retorno — à terra, ao silêncio, 
+                                        ao ensinamento profundo das nossas origens. Escolher Hayô é dizer sim ao sagrado que vive em você.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Segunda Foto -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <img src="assets/images/fotos novas/zu-60 (1).JPEG" class="d-block w-100 mb-0 rounded" alt="Foto de Afrodite, fundadora do ateliê">
+                            </div>
+                        </div>
+                        
+                        <!-- Segundo Texto -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="mt-5 pt-3 border-top border-2">
+                                    <div class="text-center mb-2">
+                                        <h4 class="section-title">Sou <span class="text-colored">Afrodite</span></h4>
+                                    </div>
+                                    <div class="nossa-essencia-text">
+                                        <p>
+                                            nativa da Ilha Grande (RJ) e mulher indígena do povo Pataxó Hã Hã Hãe. 
+                                            Minha caminhada é guiada pelos ensinamentos dos meus ancestrais e pela força da natureza que pulsa em mim.
+                                        </p>
+                                    
+                                        <p>
+                                            Desde 2020, dedico-me à criação de cosméticos que honram as plantas e suas medicinas. 
+                                            Mas foi em 2024, no encontro do rio com o mar, no território Pataxó em Caraíva-Ba (aldeia Mãe - Barra Velha), 
+                                            que meu coração encontrou morada — e meu propósito, direção.
+                                        </p>
+                                    
+                                        <p>
+                                            Criar cosméticos naturais é a forma que encontrei de celebrar a sabedoria ancestral 
+                                            e compartilhar os encantos da floresta com o mundo. Meu trabalho é movido pela intenção 
+                                            de levar cura, bem-estar e conexão — à sua vida e à sua relação com a natureza.
+                                        </p>
+                                    
+                                        <p>
+                                            Com o <strong>Hayô Ateliê</strong>, vou além da criação de produtos: 
+                                            busco resgatar saberes antigos e oferecer a cada pessoa a oportunidade de vivenciar 
+                                            a magia das plantas e reconectar-se com sua própria essência.
+                                        </p>
+                                    
+                                        <p>
+                                            Cada cosmético é uma homenagem à minha ancestralidade e à sabedoria que veio antes de mim. 
+                                            É também um convite para construirmos juntos um futuro mais respeitoso com a natureza 
+                                            e com os povos originários.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </section>
+
+        <!-- Criando a Seção de Produtos em Destaque -->
+    
+        <section class="py-4" id="destaques">
+            <div class="container">
+                <div class="text-center text-colored mt-2">
+                    <h4 class="section-title">Hayô <span class="text-colored">Ateliê</span></h4>
+                    <p><em>A ancestralidade no poder de cura da natureza.</em></p>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="product-link">
+                            <img src="assets/images/DESTAQUES/zu-141.jpeg" class="d-block w-100 rounded mb-2" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="product-link">
+                            <img src="assets/images/DESTAQUES/zu-36.jpeg" class="d-block w-100 rounded mb-2" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="product-link">
+                            <img src="assets/images/DESTAQUES/zu.111.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#" class="product-link">
+                            <img src="assets/images/DESTAQUES/zu-119.jpeg" class="d-block w-100 rounded mb-2" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nova Seção com Imagem e Texto -->
+        <section id="sobre-nos" class="py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 mb-4">
+                        <div class="video-wrapper">
+                            <video controls autoplay loop muted playsinline width="100%" style="max-width: 100%;">
+                                <source src="assets/images/DESTAQUES/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="poem-content">
+                            <p>
+                                Meu corpo é pele de terra.
+                                Carrego Hayô no centro do peito - sol-semente, caminho de luz.
+                                Folhas-medicina me banham, rezam meu corpo, perfumam minha pele
+                                Urucum me cobre com força.
+                                Sou mulher originária, sou quem planta o amanhã.
+                                Sou memória viva de Abya Yala.
+                                Sarã nakíya, a raiz ancestral.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Catálogos -->
+        <section id="catalogos" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">Nosso <span class="text-colored">Catálogo</span></h2>
+                        <p class="text-muted">Explore nosso catálogo de produtos ancestrais</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Saboaria Ancestral -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="catalogo-card text-center">
+                            <div class="catalogo-image mb-3">
+                                <img src="assets/images/catalogo/Catálogo_saboaria_ancestral.jpg" alt="Saboaria Ancestral" class="img-fluid rounded">
+                            </div>
+                            <h4 class="text-colored mb-3">Saboaria Ancestral</h4>
+                            <p class="text-muted mb-3">Sabonetes fitoterápicos feitos à mão com plantas medicinais da floresta</p>
+                            <a href="saboaria-ancestral.html" class="btn btn-outline-primary catalogo-btn">Explorar Catálogo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Defumador Sagrado -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="catalogo-card text-center">
+                            <div class="catalogo-image mb-3">
+                                <img src="assets/images/catalogo/Catálogo_defumador_sagrado.jpg" alt="Defumador Sagrado" class="img-fluid rounded">
+                            </div>
+                            <h4 class="text-colored mb-3">Defumador Sagrado</h4>
+                            <p class="text-muted mb-3">Incensos naturais para purificação e conexão espiritual</p>
+                            <a href="defumador-sagrado.html" class="btn btn-outline-primary catalogo-btn">Explorar Catálogo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Óleos Mágicos -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="catalogo-card text-center">
+                            <div class="catalogo-image mb-3">
+                                <img src="assets/images/catalogo/Oleos_magicos.jpg" alt="Óleos Mágicos" class="img-fluid rounded">
+                            </div>
+                            <h4 class="text-colored mb-3">Óleos Mágicos</h4>
+                            <p class="text-muted mb-3">Óleos vegetais puros para cuidado e proteção da pele</p>
+                            <a href="oleos-magicos.html" class="btn btn-outline-primary catalogo-btn">Explorar Catálogo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Relicário Botânico -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="catalogo-card text-center">
+                            <div class="catalogo-image mb-3">
+                                <img src="assets/images/catalogo/Relicário_Botânico.jpg" alt="Relicário Botânico" class="img-fluid rounded">
+                            </div>
+                            <h4 class="text-colored mb-3">Relicário Botânico</h4>
+                            <p class="text-muted mb-3">Cuidados capilares com plantas medicinais da floresta</p>
+                            <a href="relicario-botanico.html" class="btn btn-outline-primary catalogo-btn">Explorar Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criando a seção das Categorias de Produtos -->
+        
+        <section id="produtos" class="pt-5 py-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5 mt-5">Conheça nossa Linha <span class="text-colored"> Hayô</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#saboaria" class="fw-bold text-start text-colored2 nav-link active">Saboaria Ancestral</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#defumadores" class="fw-bold text-start text-colored2 nav-link ">Defumador Sagrado</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#oleos" class="fw-bold text-start text-colored2 nav-link ">Óleos Mágicos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#para-os-cabelos" class="fw-bold text-start text-colored2 nav-link ">Relicário Botânico</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="saboaria">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="category-description text-center">
+                                            <p class="lead text-muted">
+                                                <strong>Saboaria Ancestral</strong> - Sabonetes que nascem do mato e da força da sabedoria ancestral. Um banho de floresta, sarã nakíya. 
+                                                Cada preparo carrega ativos de plantas medicinais, manipulados com intenção e cuidado. Fitoterápicos de alta performance, feitos com afeto. Banhar-se é celebrar o corpo como templo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                            <img class="d-block w-100" src="assets/images/produtos/saboaria/hayo 1.jpg" alt="Sabonete Hayô">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                            <h5 class="text-colored mt-2 fw-bold">Sabonete Hayô</h5>
+                                        </a>
+                                        <p>
+                                            Hayô significa sol — e este sabonete é um banho de luz para sua pele íntima. Combinando cúrcuma, melaleuca, dolomita, rosa mosqueta e óleo de girassol, essa fórmula natural clareia a pele, previne pelos encravados e foliculite, alivia coceiras e regenera após a depilação. Proporciona uma depilação sem dor e sem irritações, enquanto hidrata, uniformiza o tom e deixa a pele radiante.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                            <img class="d-block w-100" src="assets/images/produtos/saboaria/celeste.jpg" alt="Celeste">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Celeste</h5>
+                                        </a>
+                                        <p>
+                                            O Sabonete Fitoterápico Celeste vai além da limpeza: é autocuidado, conexão e medicina botânica na pele. Feito com argila branca, copaíba, rosa mosqueta, óleo de girassol e dolomita, ele clareia, regenera, nutre e equilibra. Inspirado na argiloterapia ancestral, é uma máscara de argila diária, feita à mão na Aldeia Pataxó com a força da floresta e dos saberes ancestrais.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                            <img class="d-block w-100" src="assets/images/produtos/saboaria/ebano.jpg" alt="Ébano">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                            <h5 class="text-colored mt-2 fw-bold">Sabonete Ébano</h5>
+                                        </a>
+                                        <p>
+                                            O Sabonete Fitoterápico Ébano promove limpeza profunda, equilíbrio e detox da pele. Com carvão ativado, argila preta, patchouli, calêndula e manteiga de karité, controla oleosidade, reduz cravos e inflamações, acalma e nutre sem ressecar. Um detox natural que purifica, revitaliza e devolve leveza, feito à mão na Aldeia Pataxó com saberes ancestrais da floresta.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                            <img class="d-block w-100" src="assets/images/produtos/saboaria/bucha solar.jpg" alt="Sabonete Bucha Solar">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                            <h5 class="text-colored mt-2 fw-bold">Sabonete esfoliante bucha solar</h5>
+                                        </a>
+                                        <p>
+                                            Sabonete esfoliante com bucha vegetal e aroma quente e terroso, que traz leveza ao banho enquanto promove uma esfoliação profunda e natural, removendo células mortas e impurezas. Feito à mão com cúrcuma, calêndula e camomila, é anti-inflamatório, adstringente, auxilia no cuidado de peles com foliculite, acalma sensibilidades e previne inflamações. Biodegradável e sem microplásticos, é amigo da natureza e da sua pele.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                            <img class="d-block w-100" src="assets/images/produtos/saboaria/bucha manga 2.jpg" alt="Sabonete esfoliante manga e maracujá">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                            <h5 class="text-colored mt-2 fw-bold">Sabonete esfoliante manga e maracujá</h5>
+                                        </a>
+                                        <p>
+                                            Sabonete esfoliante com bucha vegetal e aroma tropical de manga e maracujá, que traz leveza ao banho enquanto remove células mortas e impurezas. Feito à mão com camomila e calêndula, acalma peles sensibilizadas, auxilia na cicatrização e previne inflamações. Biodegradável e sem microplásticos, é amigo da natureza e da sua pele.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Botão Compre Aqui -->
+                                <div class="row mt-4">
+                                    <div class="col-12 text-center">
+                                        <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer" class="btn btn-compre-aqui">
+                                            <i class="bi bi-cart-plus me-2"></i>
+                                            Compre Aqui
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="defumadores">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="category-description text-center">
+                                            <p class="lead text-muted">
+                                                <strong>Defumador Sagrado</strong> -  Queimar ervas é um ato ancestral, um elo invisível que une o céu, a terra e o espírito. A fumaça 
+                                                que dança no ar carrega intenções, orações, pedidos e gratidão. É através dela que limpamos, 
+                                                curamos e abrimos espaços — internos e externos — para o novo, para a harmonia e para a 
+                                                expansão da consciência. Nossos bastões de defumação são feitos com amor, respeito e reverência à natureza. Cada 
+                                                erva foi cuidadosamente escolhida e colhida no seu tempo, preservando sua medicina e sua 
+                                                força espiritual. Feitos apenas com ervas naturais, secos artesanalmente, sem químicos e sem 
+                                                essência sintética. Aqui, cada sopro de fumaça é um convite ao sagrado, à conexão com os ciclos da vida, com os 
+                                                ancestrais e com os elementos. Acenda, respire, permita-se sentir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/defumadores/incenso venus.jpg" alt="Defumador Amor de Venus">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Defumador Amor de Venus</h5>
+                                        </a>
+                                        <p>
+                                            Amor de Vênus é um portal vibracional, uma medicina feita para cuidar, acolher e restaurar. A 
+                                            união da erva-cidreira, que acalma e reorganiza, com a lavanda, que abraça, suaviza e 
+                                            protege, cria uma frequência que dissolve ansiedades, tensões e sobrecargas, enquanto nutre, 
+                                            fortalece e enche de amor. Ao ser queimado, convida a desacelerar, a respirar fundo e a silenciar o que inquieta. Limpa 
+                                            suavemente os campos energético, mental e emocional, trazendo de volta a paz, a harmonia e 
+                                            o equilíbrio. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/defumadores/incenso fortuna.jpg" alt="Defumador Fortuna">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                         <h5 class="text-colored mt-2 fw-bold">Defumador Fortuna</h5>
+                                        </a>
+                                        <p>
+                                            Fortuna é um portal vibracional, uma medicina criada para dissolver bloqueios, fortalecer a confiança e abrir caminhos onde 
+                                            antes havia dúvidas e limites. A união do alecrim, que energiza e ilumina, com o manjericão, que protege e atrai bênçãos, e 
+                                            o louro, que consagra desejos e manifest a prosperidade, cria uma frequência capaz de 
+                                            renovar ciclos, nutrir propósitos e magnetizar oportunidades. Ao ser queimado, convida a respirar fundo, ancorar a presença e afirmar o merecimento.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/defumadores/incenso eucalipto.jpg" alt="Defumador de Eucalipto">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Defumador de Eucalipto</h5>
+                                        </a>
+                                        <p>
+                                            O eucalipto é uma planta de poder, profundamente ligada aos elementos Ar e Terra, capaz de atravessar campos energéticos e desfazer densidades, 
+                                            estagnações e interferências. Sua medicina atua como uma ponte entre o corpo físico e os campos sutis, restaurando o equilíbrio, 
+                                            fortalecendo a aura e realinhando a energia vital. Ao queimar, sua fumaça abre espaço — dentro e fora — removendo miasmas, cargas 
+                                            emocionais, pensamentos densos, padrões vibracionais negativos e demandas espirituais.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Botão Compre Aqui -->
+                                <div class="row mt-4">
+                                    <div class="col-12 text-center">
+                                        <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer" class="btn btn-compre-aqui">
+                                            <i class="bi bi-cart-plus me-2"></i>
+                                            Compre Aqui
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="oleos">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="category-description text-center">
+                                            <p class="lead text-muted">
+                                                <strong>Óleos Mágicos</strong> - Preparos que unem fitoterapia, aromaterapia e a energia viva das plantas. Óleos extraídos e consagrados em práticas de manipulação espiritual, criados para ungir, 
+                                                proteger, harmonizar emoções e despertar estados de presença.Ferramentas sagradas que curam, encorajam e lembram que o corpo é território de conexão. Podem perfumar a pele, nutrir no toque das massagens, bronzear e sustentar a delicadeza do 
+                                                autocuidado diário. A destilação dos óleos é feita na aldeia Pataxó, onde todo o processo é artesanal — do preparo 
+                                                ao feitio final. Cada frasco carrega o tempo, a força e o cuidado das mãos que honram a 
+                                                floresta.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/oleos/urucum 2.jpg" alt="Óleo Acelerador de Bronzeado Urucum">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Óleo Uru'ku</h5>
+                                        </a>
+                                        <p>
+                                            Pindorama é raiz, é essência, é originário. URU’KU vem do tupi e significa vermelho — o tom que pulsa nas sementes de urucum, nas 
+                                            peles douradas pelo sol e na força viva dos povos ancestrais. Nosso óleo é um acelerador de bronzeado preparado com ativos medicinais da mata verde! 
+                                            Mas ele é mais que qualquer bronzeador: é um blend criado com saberes indígenas e 
+                                            produzido por mãos originárias, ele celebra a beleza natural com respeito, intenção e cura.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/oleos/oleo magico.jpg" alt="Óleo Acelerador de Bronzeado Urucum">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Óleo Mágico</h5>
+                                        </a>
+                                        <p>
+                                            Nosso óleo magico é feito de sementes de urucum, óleos vegetais de cenoura, coco e amêndoas, e o brilho delicado da mica  (nosso glitter natural).
+                                            Nutre, hidrata e acelera o bronzeado de forma segura e encantadora — revelando aquele tom dourado e quente que desperta a sua deusa.
+                                            A cada aplicação, você sente o toque do sol e da floresta na pele. Nosso urucum é sagrado: é força, resistência e proteção. Para pessoas solares.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/oleos/oleo-acelerador-de-bronzeado-urucum.jpeg" alt="Óleo Acelerador de Bronzeado Urucum">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Óleo Acelerador de Bronzeado Urucum</h5>
+                                        </a>
+                                        <p>
+                                            O urucum é ancestral. Guarda em si a energia da proteção, da vitalidade e da resistência. É a cor do sol em movimento, dedicado a quem irradia calor e presença.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Botão Compre Aqui -->
+                                <div class="row mt-4">
+                                    <div class="col-12 text-center">
+                                        <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer" class="btn btn-compre-aqui">
+                                            <i class="bi bi-cart-plus me-2"></i>
+                                            Compre Aqui
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="para-os-cabelos">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="category-description text-center">
+                                            <p class="lead text-muted">
+                                                <strong>Relicário Botânico</strong> - Um espaço vivo de criação intuitiva, onde a manipulação espiritual das plantas se 
+                                                manifesta em formas sempre novas. Fórmulas que nascem do silêncio, do estudo e da escuta profunda, honrando a força 
+                                                fitoterápica e a dimensão espiritual que habitam cada ser vegetal. Aqui nascem medicinas que não têm pressa: poções, perfumes, unguentos e preparos 
+                                                que se revelam no tempo da floresta e no compasso da escuta interior.                                               
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/relicario/relicario 1.jpg" alt="Relicario Floresta">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Relicário Floresta</h5>
+                                        </a>
+                                        <p>
+                                            Um relicário tecido pela floresta, onde cada folha e raiz é portadora de memória. Aqui, a alquimia não se apressa: ela floresce no ritmo da natureza, 
+                                            revelando segredos em aromas, texturas e cores. Cada criação é um gesto de reverência ao espírito das plantas e ao mistério que habita nelas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/relicario/relicario3.jpg" alt="Relicário altar">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Relicário Altar</h5>
+                                        </a>
+                                        <p>
+                                            Este espaço é altar e oficina: lugar onde a sabedoria vegetal encontra mãos humanas em gesto de cuidado. São fórmulas que sussurram histórias antigas, 
+                                            transformando o simples ato de tocar a pele em ritual de presença. Poções, essências e bálsamos que convidam a celebrar a vida em sua forma mais sagrada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="product-link">
+                                        <img class="d-block w-100" src="assets/images/produtos/relicario/relicario 2.jpg" alt="Relcário Raízes">
+                                        </a>
+                                        <a href="#" class="product-link">
+                                        <h5 class="text-colored mt-2 fw-bold">Relicário Raízes</h5>
+                                        </a>
+                                        <p>
+                                            Entre raízes, sementes e flores, revelam-se caminhos de cura. Cada preparo nasce do encontro entre intuição e ciência ancestral, 
+                                            trazendo a força invisível da floresta para o corpo e para o espírito. Um convite a se banhar na sabedoria da Terra.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Botão Compre Aqui -->
+                                <div class="row mt-4">
+                                    <div class="col-12 text-center">
+                                        <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer" class="btn btn-compre-aqui">
+                                            <i class="bi bi-cart-plus me-2"></i>
+                                            Compre Aqui
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer class="footer-modern">
+            <div class="container">
+                <div class="footer-top py-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-md-start text-center mb-4 mb-md-0">
+                            <a href="https://www.instagram.com/hayoatelie/" target="_blank" rel="noopener noreferrer" class="footer-logo-link">
+                                <img src="assets/images/Amarelo.png" alt="Logo Hayô Ateliê" class="footer-logo mb-3">
+                            </a>
+                            <div class="footer-info">
+                                <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Aldeia Xandó, Caraíva - BA</p>
+                                <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>contato@hayoatelie.com</p>
+                                <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>(73) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <h3 class="footer-heading mb-3">Conecte-se Conosco</h3>
+                            <div class="footer-social-icons d-flex justify-content-center gap-3">
+                                <a href="https://www.instagram.com/hayoatelie/" target="_blank" class="footer-social-link">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="footer-social-link">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                                <a href="#" class="footer-social-link">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center mb-4 mb-md-0">
+                            <h3 class="footer-heading mb-3">Nossos Valores</h3>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="footer-values">
+                                    <span class="footer-value-tag">100% Natural</span>
+                                    <span class="footer-value-tag">Sustentável</span>
+                                    <span class="footer-value-tag">Artesanal</span>
+                                    <span class="footer-value-tag">Ancestral</span>
+                                    <span class="footer-value-tag">Feito à Mão</span>
+                                </div>
+                                <div class="mt-3 pt-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom py-3">
+                    <div class="row">
+                        <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
+                            <p class="mb-0">&copy; 2025 Hayô Ateliê. Todos os direitos reservados.</p>
+                        </div>
+                        <div class="col-md-6 text-md-end text-center">
+                            <p class="mb-0"><strong>Desenvolvido com <i class="bi bi-heart-fill mx-2"></i> pela Natureza</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para navegação suave entre seções -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navegação suave para todos os links do menu
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            const sections = document.querySelectorAll('section[id]');
+            
+            // Função para destacar seção ativa
+            function highlightActiveSection() {
+                const scrollPosition = window.scrollY + 200; // Offset maior para melhor detecção
+                let currentSection = '';
+                
+                // Verificar cada seção
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    // Se o scroll está dentro da seção
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        currentSection = sectionId;
+                    }
+                });
+                
+                // Se estiver no topo da página, destacar primeira seção
+                if (window.scrollY < 150) {
+                    currentSection = 'carrossel';
+                }
+                
+                // Se não encontrou seção, usar a última seção visível
+                if (!currentSection && sections.length > 0) {
+                    const lastSection = sections[sections.length - 1];
+                    if (window.scrollY + window.innerHeight >= lastSection.offsetTop) {
+                        currentSection = lastSection.getAttribute('id');
+                    }
+                }
+                
+                // Remover active de todos os links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Adicionar active ao link correspondente
+                if (currentSection) {
+                    const activeLink = document.querySelector(`a[href="#${currentSection}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            }
+            
+            // Navegação suave para links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Fechar menu mobile se estiver aberto
+                        const navbarCollapse = document.getElementById('menu-navegacao');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                                toggle: false
+                            });
+                            bsCollapse.hide();
+                        }
+                        
+                        // Scroll suave para a seção
+                        const headerHeight = document.getElementById('cabecalho').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Destacar link ativo imediatamente
+                        navLinks.forEach(navLink => navLink.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Re-verificar após scroll
+                        setTimeout(highlightActiveSection, 500);
+                    }
+                });
+            });
+            
+            // Escutar scroll para destacar seção ativa
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(highlightActiveSection, 50);
+            });
+            
+            // Destacar seção inicial após carregamento
+            setTimeout(highlightActiveSection, 200);
+            
+            // Re-verificar quando a página redimensionar
+            window.addEventListener('resize', function() {
+                setTimeout(highlightActiveSection, 100);
+            });
+        });
+    </script>
+</body>
+</html>
